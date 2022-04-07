@@ -7,7 +7,7 @@ export default {
   component: Colour,
 };
 
-export const CoreColours = (args) => (
+export const CoreColours = () => (
   <div>
     <Colour token="background-white-theme">$background-white-theme</Colour>
     <Colour token="ui-background-dark-theme">$ui-background-dark-theme</Colour>
@@ -52,11 +52,6 @@ export const CoreColours = (args) => (
     <Colour token="support-03">$support-03</Colour>
   </div>
 );
-
-CoreColours.args = {
-  icon: 'facehappy',
-  inline: true,
-};
 
 CoreColours.storyName = 'core colour tokens';
 
