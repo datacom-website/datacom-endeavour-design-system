@@ -1,0 +1,13 @@
+/* <div> */
+div.headingDiv{
+    width: 200px;
+    height: 68px;
+    padding: 24px 0px 0px 24px;
+}
+
+/* <mark> */
+mark{
+    background-color: #DADADA;
+    border-radius: 4px;
+    padding: 6px 8px;
+}
