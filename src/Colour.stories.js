@@ -71,8 +71,8 @@ export const CoreColours = () => (
   </div>
 );
 
-CoreColours.storyName = 'core colour tokens';
+CoreColours.storyName = 'Core Colour Tokens';
 
 export const ExtendedShades = () => outputTokens(shadeTokens);
 
-ExtendedShades.storyName = 'extended shade tokens';
+ExtendedShades.storyName = 'Extended Shade Tokens';

@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 // Layout table components
-export const Element = 
+export const LayoutElement = 
 styled.div`
     width: ${props => props.pxValues}px;
     height: ${props => props.pxValues}px;
     background-color: #76C4FF;
 `
 
-export const ElementContainer =
+export const LayoutElementContainer =
 styled.div`
     height: ${props => 
         props.containerHeight < 64 

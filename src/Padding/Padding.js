@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 //  Padding layout components
-export const Element = 
+export const PaddingSquare = 
 styled.div`
     width: ${props => props.pxValue}px;
     height: ${props => props.pxValue}px;
     background-color: #E60060;
 `
 
-export const ElementContainer = 
+export const PadSquareContainer = 
 styled.div`
     height: ${props => 
         props.containerHeight < 64
