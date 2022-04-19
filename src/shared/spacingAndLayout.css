@@ -13,3 +13,9 @@ mark{
     padding: 6px 8px;
     box-sizing: content-box;
 }
+
+@media screen and (max-width: 550px){
+    mark{
+        line-height: 1.5;
+    }
+}

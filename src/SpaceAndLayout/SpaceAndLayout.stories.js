@@ -33,7 +33,8 @@ export const paddingTemplate = () => (
         {paddingNames.map((paddingTokens) => {
             return (
                 <tr>
-                    <TData style={{borderLeftColor: 'white'}}
+                    <TData 
+                    style={{borderLeftColor: '#F0F0F0'}}
                     itemIndex={paddingNames.indexOf(paddingTokens)}>
                         <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
                             <mark
@@ -55,7 +56,7 @@ export const paddingTemplate = () => (
                     </TData>
                     <TData
                     style={{
-                    borderRightColor: 'white'}} 
+                    borderRightColor: '#F0F0F0'}} 
                     itemIndex={paddingNames.indexOf(paddingTokens)}> 
                         <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
                             <PaddingSquare pxValue={paddingValues[paddingTokens][1]}/>
@@ -89,7 +90,7 @@ export const layoutTemplate = () => (
                 <tr>
                     <TData 
                     style={{
-                    borderLeftColor: 'white'}}
+                    borderLeftColor: '#F0F0F0'}}
                     itemIndex={layoutNames.indexOf(layoutTokens)}>
                         <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
                             <mark>
@@ -109,7 +110,7 @@ export const layoutTemplate = () => (
                     </TData>
                     <TData 
                     style={{
-                    borderRightColor: 'white'}}
+                    borderRightColor: '#F0F0F0'}}
                     itemIndex={layoutNames.indexOf(layoutTokens)}>
                         <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
                             <LayoutElement pxValues={layoutValues[layoutTokens][1]}/>
