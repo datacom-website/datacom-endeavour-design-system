@@ -15,57 +15,59 @@ export default {
 
 // For each padding tokens, create a row of their respective values
 export const paddingTemplate = () => (
-    <Table>
-        <tr>
-            <THeading>
-                <div className='headingDiv'>Tokens</div>
-            </THeading>
-            <THeading>
-                <div className='headingDiv'>REM</div>
-            </THeading>
-            <THeading>
-                <div className='headingDiv'>Px Values</div>
-            </THeading>
-            <THeading>
-                <div className='headingDiv'>Example</div>
-            </THeading>
-        </tr>   
-        {paddingNames.map((paddingTokens) => {
-            return (
-                <tr>
-                    <TData 
-                    style={{borderLeftColor: '#F0F0F0'}}
-                    itemIndex={paddingNames.indexOf(paddingTokens)}>
-                        <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
-                            <mark
-                            className='mark'>
-                                {paddingTokens}
-                            </mark>
-                        </PadSquareContainer>
-                    </TData>
-                    <TData itemIndex={paddingNames.indexOf(paddingTokens)}>
-                        <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
-                            {paddingValues[paddingTokens][0]}
-                        </PadSquareContainer>
-                    </TData>
-                    <TData itemIndex={paddingNames.indexOf(paddingTokens)}>
-                        <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
-                            {paddingValues[paddingTokens][1]}
-                            px
-                        </PadSquareContainer>
-                    </TData>
-                    <TData
-                    style={{
-                    borderRightColor: '#F0F0F0'}} 
-                    itemIndex={paddingNames.indexOf(paddingTokens)}> 
-                        <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
-                            <PaddingSquare pxValue={paddingValues[paddingTokens][1]}/>
-                        </PadSquareContainer>
-                    </TData>
-                </tr>
-            )
-        })}
-    </Table>
+    <div style={{overflow: 'hidden'}}>
+        <Table>
+            <tr>
+                <THeading>
+                    <div className='headingDiv'>Tokens</div>
+                </THeading>
+                <THeading>
+                    <div className='headingDiv'>REM</div>
+                </THeading>
+                <THeading>
+                    <div className='headingDiv'>Px Values</div>
+                </THeading>
+                <THeading>
+                    <div className='headingDiv'>Example</div>
+                </THeading>
+            </tr>   
+            {paddingNames.map((paddingTokens) => {
+                return (
+                    <tr>
+                        <TData 
+                        style={{borderLeftColor: '#F0F0F0'}}
+                        itemIndex={paddingNames.indexOf(paddingTokens)}>
+                            <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
+                                <mark
+                                className='mark'>
+                                    {paddingTokens}
+                                </mark>
+                            </PadSquareContainer>
+                        </TData>
+                        <TData itemIndex={paddingNames.indexOf(paddingTokens)}>
+                            <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
+                                {paddingValues[paddingTokens][0]}
+                            </PadSquareContainer>
+                        </TData>
+                        <TData itemIndex={paddingNames.indexOf(paddingTokens)}>
+                            <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
+                                {paddingValues[paddingTokens][1]}
+                                px
+                            </PadSquareContainer>
+                        </TData>
+                        <TData
+                        style={{
+                        borderRightColor: '#F0F0F0'}} 
+                        itemIndex={paddingNames.indexOf(paddingTokens)}> 
+                            <PadSquareContainer containerHeight={paddingValues[paddingTokens][1]}>
+                                <PaddingSquare pxValue={paddingValues[paddingTokens][1]}/>
+                            </PadSquareContainer>
+                        </TData>
+                    </tr>
+                )
+            })}
+        </Table>
+    </div>
 )
 
 // For each layout tokens, create a row of their respective values

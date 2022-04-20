@@ -7,7 +7,6 @@ styled.table`
     border-collapse: collapse;
     width: 100%;
     height: 100%;
-
 `
 
 export const THeading =
@@ -19,7 +18,6 @@ styled.th`
 export const TData =
 styled.td`
     border: 1px solid #d9d9d9;
-    // padding: 24px 0px 0px 24px;
     border-bottom-color: ${props => 
         (props.itemIndex+1) % 9 == 0
         ? '#F0F0F0'  : '#d9d9d9'};
