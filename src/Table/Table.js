@@ -20,5 +20,5 @@ styled.td`
     border: 1px solid #d9d9d9;
     border-bottom-color: ${props => 
         (props.itemIndex+1) % 9 == 0
-        ? '#F0F0F0'  : '#d9d9d9'};
+        ? 'transparent'  : '#d9d9d9'};
 `
