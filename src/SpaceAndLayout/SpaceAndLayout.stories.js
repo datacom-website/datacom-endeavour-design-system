@@ -72,56 +72,58 @@ export const paddingTemplate = () => (
 
 // For each layout tokens, create a row of their respective values
 export const layoutTemplate = () => (
-    <Table>
-        <tr>
-            <THeading>
-                <div className='headingDiv'>Tokens</div>
-            </THeading>
-            <THeading>
-                <div className='headingDiv'>REM</div>
-            </THeading>
-            <THeading>
-                <div className='headingDiv'>Px Values</div>
-            </THeading>
-            <THeading>
-                <div className='headingDiv'>Example</div>
-            </THeading>
-        </tr>
-        {layoutNames.map((layoutTokens) => {
-            return (
-                <tr>
-                    <TData 
-                    style={{
-                    borderLeftColor: '#F0F0F0'}}
-                    itemIndex={layoutNames.indexOf(layoutTokens)}>
-                        <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
-                            <mark>
-                                {layoutTokens}
-                            </mark>
-                        </LayoutElementContainer>
-                    </TData>
-                    <TData itemIndex={layoutNames.indexOf(layoutTokens)}>
-                        <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
-                            {layoutValues[layoutTokens][0]}
-                        </LayoutElementContainer>
-                    </TData>
-                    <TData itemIndex={layoutNames.indexOf(layoutTokens)}>
-                        <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
-                            {layoutValues[layoutTokens][1]}px
-                        </LayoutElementContainer>
-                    </TData>
-                    <TData 
-                    style={{
-                    borderRightColor: '#F0F0F0'}}
-                    itemIndex={layoutNames.indexOf(layoutTokens)}>
-                        <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
-                            <LayoutElement pxValues={layoutValues[layoutTokens][1]}/>
-                        </LayoutElementContainer>
-                    </TData>
-                </tr>
-            )
-        })}
-    </Table>
+    <div style={{overflow: 'hidden'}}>
+        <Table>
+            <tr>
+                <THeading>
+                    <div className='headingDiv'>Tokens</div>
+                </THeading>
+                <THeading>
+                    <div className='headingDiv'>REM</div>
+                </THeading>
+                <THeading>
+                    <div className='headingDiv'>Px Values</div>
+                </THeading>
+                <THeading>
+                    <div className='headingDiv'>Example</div>
+                </THeading>
+            </tr>
+            {layoutNames.map((layoutTokens) => {
+                return (
+                    <tr>
+                        <TData 
+                        style={{
+                        borderLeftColor: '#F0F0F0'}}
+                        itemIndex={layoutNames.indexOf(layoutTokens)}>
+                            <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
+                                <mark>
+                                    {layoutTokens}
+                                </mark>
+                            </LayoutElementContainer>
+                        </TData>
+                        <TData itemIndex={layoutNames.indexOf(layoutTokens)}>
+                            <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
+                                {layoutValues[layoutTokens][0]}
+                            </LayoutElementContainer>
+                        </TData>
+                        <TData itemIndex={layoutNames.indexOf(layoutTokens)}>
+                            <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
+                                {layoutValues[layoutTokens][1]}px
+                            </LayoutElementContainer>
+                        </TData>
+                        <TData 
+                        style={{
+                        borderRightColor: '#F0F0F0'}}
+                        itemIndex={layoutNames.indexOf(layoutTokens)}>
+                            <LayoutElementContainer containerHeight={layoutValues[layoutTokens][1]}>
+                                <LayoutElement pxValues={layoutValues[layoutTokens][1]}/>
+                            </LayoutElementContainer>
+                        </TData>
+                    </tr>
+                )
+            })}
+        </Table>
+    </div>
 )
 
 paddingTemplate.storyName = 'Padding Tokens';
