@@ -1,37 +1,45 @@
-import React from 'react';
-import Button from './Button';
-import { buttonColors } from './Button';
+
+import Button from "./Button"
 
 export default {
-  title: 'Design System/Button',
+  title: "Design System/Button",
   component: Button,
-};
+  argTypes: { handleClick: { action: "handleClick" } },
+}
 
-// Displays the button component
-// Can be configured in storybook
-// export const paddingTokens = (args) => <Button {...args}/>;
-// paddingTokens.args = {
-//     text: 'Click Me',
-//     backgroundColor: "green",
-//     padding: '4px',
-// }
+const Template = args => <Button {...args} />
 
-// Display all buttons
-// {buttonColors} is returning the array values
-// export const allButtons = () => (
-//   <div>
-//     {buttonColors.map((colorItem) => {
-//       return (
-//         <div style={{
-//             padding: '12px 8px',
-//             borderBottom: '1px solid #DADADA',
-//             display: 'flex',
-//             alignItems: 'center',
-//         }}>
-//           <Button text='Hello' backgroundColor={colorItem} padding='10px' />
-//           <p> {colorItem} </p>
-//         </div>
-//       )
-//     })}
-//   </div>
-// )
+export const Red = Template.bind({})
+Red.args = {
+  backgroundColor: "#cdb4db",
+  label: "Press Me",
+  size: "md",
+}
+
+export const Green = Template.bind({})
+Green.args = {
+  backgroundColor: "#ffc8dd",
+  label: "Click more",
+  size: "md",
+}
+
+export const Small = Template.bind({})
+Small.args = {
+  backgroundColor: "#ffafcc",
+  label: "Next page",
+  size: "sm",
+}
+
+export const Large = Template.bind({})
+Large.args = {
+  backgroundColor: "#bde0fe",
+  label: "Exit",
+  size: "lg",
+}
+
+export const LongLabel = Template.bind({})
+LongLabel.args = {
+  backgroundColor: "#a2d2ff",
+  label: "What the holy guacamole!",
+  size: "md",
+}
