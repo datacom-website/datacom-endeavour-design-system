@@ -17,6 +17,7 @@ export const Table = ({tokens, data, topic = 'Headings'}) => {
                                     <ProductiveExample exSize={data[el].size[0]} exFontWeight={data[el].weight[0]}
                                     exlineHeight={data[el].lineHeight[0]} exColour={data[el].colour}>
                                         {data[el].example}
+                                        -Example: <i className='fa-arrow'></i>
                                     </ProductiveExample>
                                 </td>
                                 <td className='cmp-table__td secondCol'>
