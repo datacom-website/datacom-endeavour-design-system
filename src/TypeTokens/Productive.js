@@ -48,7 +48,7 @@ export const productiveValues = {
     },
     '$icon-01' : {
         type: 'Font Awesome 5 Pro',
-        size: ['48', '3'],
+        size: ['24', '1.5'],
         lineHeight: ['64', '4'],
         weight: ['700', 'Bold'],
         letterSpacing: '-0.5',
