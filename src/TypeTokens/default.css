@@ -45,6 +45,13 @@
     color: #161616;
 }
 
+@media screen{
+    .cmp-table__td--gray-background{
+        line-height: 1.5;
+    }
+}
+
 .cmp-table__name--semibold{
     font-weight: 600;
 }
+
