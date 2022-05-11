@@ -8,17 +8,18 @@ styled.div`
     font-weight: ${props => props.exFontWeight};
     line-height: ${props => props.exlineHeight}px;
     color: ${props => props.exColour};
+    example: 
 `
 
 export const productiveTokens = [
-    'caption-01',
-    'label-01',
-    'helper-text-01',
-    'icon-01'
+    '$caption-01',
+    '$label-01',
+    '$helper-text-01',
+    '$icon-01'
 ]
 
 export const productiveValues = {
-    'caption-01' : {
+    '$caption-01' : {
         type: 'Montserrat',
         size: ['14', '0.875'],
         lineHeight: ['18', '1.125'],
@@ -27,7 +28,7 @@ export const productiveValues = {
         colour: '#666666',
         example: 'This is for captions or legal content in a layout — not for body copy'
     },
-    'label-01' : {
+    '$label-01' : {
         type: 'Montserrat',
         size: ['12', '0.75'],
         lineHeight: ['16', '1'],
@@ -36,7 +37,7 @@ export const productiveValues = {
         colour: '#0a1839',
         example: 'This is for ﬁeld labels in components and error messages'
     },
-    'helper-text-01' : {
+    '$helper-text-01' : {
         type: 'Montserrat',
         size: ['12', '0.75'],
         lineHeight: ['16', '1'],
@@ -45,13 +46,14 @@ export const productiveValues = {
         colour: '#666666',
         example: 'This is for explanatory helper text that appears below a ﬁeld within a component'
     },
-    'icon-01' : {
+    '$icon-01' : {
         type: 'Font Awesome 5 Pro',
         size: ['48', '3'],
         lineHeight: ['64', '4'],
         weight: ['700', 'Bold'],
         letterSpacing: '-0.5',
         colour: '#0a1839',
-        example: 'xx',
+        example: '',
+        icon: 'fal fa-copy',
     }
 }

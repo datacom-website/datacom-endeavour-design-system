@@ -29,7 +29,7 @@ productiveTable.args = {
     topic: 'Productive'
 }
 
-headingsTable.storyName = 'Headings Tokens';
+headingsTable.storyName = 'Heading Tokens';
 
 bodyTable.storyName = 'Body Tokens';
 

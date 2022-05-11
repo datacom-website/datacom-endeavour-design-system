@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { css } from './default.css';
+import { test } from '../assets/font-awesome/css/all.css';
 import { HeadingsExample } from './Headings';
 import { ProductiveExample } from './Productive';
 
@@ -14,10 +15,10 @@ export const Table = ({tokens, data, topic = 'Headings'}) => {
                         return (
                             <tr>
                                 <td className='cmp-table__td'>
-                                    <ProductiveExample exSize={data[el].size[0]} exFontWeight={data[el].weight[0]}
+                                    <ProductiveExample className="" exSize={data[el].size[0]} exFontWeight={data[el].weight[0]}
                                     exlineHeight={data[el].lineHeight[0]} exColour={data[el].colour}>
-                                        {data[el].example}
-                                        -Example: <i className='fa-arrow'></i>
+                                        {data[el].example ? data[el].example : ''}
+                                        <i className={data[el].icon ? data[el].icon : ''}></i>
                                     </ProductiveExample>
                                 </td>
                                 <td className='cmp-table__td secondCol'>
@@ -49,7 +50,7 @@ export const Table = ({tokens, data, topic = 'Headings'}) => {
                     </td>
                     <td className='cmp-table__td secondCol' 
                     style={{borderRight: 0, borderTop: 0, borderBottom: 0, width: '237px'}}>
-                        <p><mark className='cmp-table__td--gray-background'>body-01</mark></p><br/>
+                        <p><mark className='cmp-table__td--gray-background'>$body-01</mark></p><br/>
                         <p><span className='cmp-table__name--semibold'>Type:</span> Montserrat</p>
                         <p><span className='cmp-table__name--semibold'>Size:</span> 16px/1rem</p>
                         <p><span className='cmp-table__name--semibold'>Line Height:</span>  24px/1.5rem</p>
@@ -71,7 +72,7 @@ export const Table = ({tokens, data, topic = 'Headings'}) => {
                                 <HeadingsExample 
                                 exSize={data[el].size[0]} exFontWeight={data[el].weight[0]}
                                 exlineHeight={data[el].lineHeight[0]}>
-                                    Headings Example
+                                    Heading Example
                                 </HeadingsExample></td>
                             <td className='cmp-table__td secondCol' style={{width: '237px'}}>
                                 <p><mark className='cmp-table__td--gray-background'>{el}</mark></p><br/>
