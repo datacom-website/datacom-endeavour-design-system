@@ -33,7 +33,7 @@ export const productiveValues = {
         size: ['12', '0.75'],
         lineHeight: ['16', '1'],
         weight: ['400', 'Regular'],
-        letterSpacing: '-0.5',
+        letterSpacing: '-0.2',
         colour: '#0a1839',
         example: 'This is for ﬁeld labels in components and error messages'
     },
@@ -42,18 +42,17 @@ export const productiveValues = {
         size: ['12', '0.75'],
         lineHeight: ['16', '1'],
         weight: ['400', 'Regular'],
-        letterSpacing: '-0.5',
+        letterSpacing: '-0.2',
         colour: '#666666',
         example: 'This is for explanatory helper text that appears below a ﬁeld within a component'
     },
     '$icon-01' : {
         type: 'Font Awesome 5 Pro',
         size: ['24', '1.5'],
-        lineHeight: ['64', '4'],
-        weight: ['700', 'Bold'],
-        letterSpacing: '-0.5',
+        lineHeight: ['24', '1.5'],
+        weight: ['Light'],
+        letterSpacing: '0',
         colour: '#0a1839',
-        example: '',
-        icon: 'fal fa-copy',
+        example: 'fal fa-copy',
     }
 }

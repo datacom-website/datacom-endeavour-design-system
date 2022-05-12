@@ -7,7 +7,7 @@ import { ProductiveExample } from './Productive';
 
 //  Table
 export const Table = ({tokens, data, topic = 'Headings'}) => {
-    if(topic == 'Productive'){
+    if(topic == 'Productive'){ 
         return(
             <div>
                 <table className='cmp-table--borderless'>
@@ -17,16 +17,15 @@ export const Table = ({tokens, data, topic = 'Headings'}) => {
                                 <td className='cmp-table__td'>
                                     <ProductiveExample className="" exSize={data[el].size[0]} exFontWeight={data[el].weight[0]}
                                     exlineHeight={data[el].lineHeight[0]} exColour={data[el].colour}>
-                                        {data[el].example ? data[el].example : ''}
-                                        <i className={data[el].icon ? data[el].icon : ''}></i>
+                                        {data[el].example != 'fal fa-copy' ? data[el].example : <i className={data[el].example}></i>}
                                     </ProductiveExample>
                                 </td>
                                 <td className='cmp-table__td secondCol'>
                                     <p><mark className='cmp-table__td--gray-background'>{el}</mark></p><br/>
                                     <p><span className='cmp-table__name--semibold'>Type:</span> Montserrat</p>
-                                    <p><span className='cmp-table__name--semibold'>Size:</span> {data[el].size[0]}px/{data[el].size[1]}rem</p>
-                                    <p><span className='cmp-table__name--semibold'>Line Height:</span> {data[el].lineHeight[0]}px/{data[el].lineHeight[1]}rem</p>
-                                    <p><span className='cmp-table__name--semibold'>Weight:</span> {data[el].weight[0]}/{data[el].weight[1]}</p>
+                                    <p><span className='cmp-table__name--semibold'>Size:</span> {data[el].size[0]}px / {data[el].size[1]}rem</p>
+                                    <p><span className='cmp-table__name--semibold'>Line Height:</span> {data[el].lineHeight[0]}px / {data[el].lineHeight[1]}rem</p>
+                                    <p><span className='cmp-table__name--semibold'>Weight:</span> {data[el].weight[0]}{data[el].weight.length > 1 ? ' /  '+data[el].weight[1] : '' }</p>
                                     <p><span className='cmp-table__name--semibold'>Letting Spacing:</span> {data[el].letterSpacing}px</p>
                                     <p><span className='cmp-table__name--semibold'>Colour:</span> {data[el].colour}</p>
                                 </td>
@@ -52,9 +51,9 @@ export const Table = ({tokens, data, topic = 'Headings'}) => {
                     style={{borderRight: 0, borderTop: 0, borderBottom: 0, width: '237px'}}>
                         <p><mark className='cmp-table__td--gray-background'>$body-01</mark></p><br/>
                         <p><span className='cmp-table__name--semibold'>Type:</span> Montserrat</p>
-                        <p><span className='cmp-table__name--semibold'>Size:</span> 16px/1rem</p>
-                        <p><span className='cmp-table__name--semibold'>Line Height:</span>  24px/1.5rem</p>
-                        <p><span className='cmp-table__name--semibold'>Weight:</span> 400/Regular</p>
+                        <p><span className='cmp-table__name--semibold'>Size:</span> 16px / 1rem</p>
+                        <p><span className='cmp-table__name--semibold'>Line Height:</span>  24px / 1.5rem</p>
+                        <p><span className='cmp-table__name--semibold'>Weight:</span> 400 / Regular</p>
                         <p><span className='cmp-table__name--semibold'>Letting Spacing:</span> -0.2px</p>
                         <p><span className='cmp-table__name--semibold'>Colour:</span> #0a1839</p>
                     </td>
@@ -77,9 +76,9 @@ export const Table = ({tokens, data, topic = 'Headings'}) => {
                             <td className='cmp-table__td secondCol' style={{width: '237px'}}>
                                 <p><mark className='cmp-table__td--gray-background'>{el}</mark></p><br/>
                                 <p><span className='cmp-table__name--semibold'>Type:</span> Montserrat</p>
-                                <p><span className='cmp-table__name--semibold'>Size:</span> {data[el].size[0]}px/{data[el].size[1]}rem</p>
-                                <p><span className='cmp-table__name--semibold'>Line Height:</span> {data[el].lineHeight[0]}px/{data[el].lineHeight[1]}rem</p>
-                                <p><span className='cmp-table__name--semibold'>Weight:</span> {data[el].weight[0]}/{data[el].weight[1]}</p>
+                                <p><span className='cmp-table__name--semibold'>Size:</span> {data[el].size[0]}px / {data[el].size[1]}rem</p>
+                                <p><span className='cmp-table__name--semibold'>Line Height:</span> {data[el].lineHeight[0]}px / {data[el].lineHeight[1]}rem</p>
+                                <p><span className='cmp-table__name--semibold'>Weight:</span> {data[el].weight[0]} / {data[el].weight[1]}</p>
                                 <p><span className='cmp-table__name--semibold'>Letting Spacing:</span> {data[el].letterSpacing}px</p>
                                 <p><span className='cmp-table__name--semibold'>Colour:</span> #0a1839</p>
                             </td>

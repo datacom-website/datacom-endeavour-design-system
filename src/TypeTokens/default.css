@@ -36,6 +36,7 @@
 }
 
 .cmp-table__td.secondCol p{
+    letter-spacing: -0.16px;
     margin: 0;
 }
 
