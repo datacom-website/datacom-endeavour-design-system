@@ -22,7 +22,7 @@ export const Table = ({tokens, data, topic = 'Headings'}) => {
                                 </td>
                                 <td className='cmp-table__td secondCol'>
                                     <p><mark className='cmp-table__td--gray-background'>{el}</mark></p><br/>
-                                    <p><span className='cmp-table__name--semibold'>Type:</span> Montserrat</p>
+                                    <p><span className='cmp-table__name--semibold'>Type:</span> {data[el].type}</p>
                                     <p><span className='cmp-table__name--semibold'>Size:</span> {data[el].size[0]}px / {data[el].size[1]}rem</p>
                                     <p><span className='cmp-table__name--semibold'>Line Height:</span> {data[el].lineHeight[0]}px / {data[el].lineHeight[1]}rem</p>
                                     <p><span className='cmp-table__name--semibold'>Weight:</span> {data[el].weight[0]}{data[el].weight.length > 1 ? ' /  '+data[el].weight[1] : '' }</p>
