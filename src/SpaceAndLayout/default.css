@@ -2,6 +2,7 @@
 
 .cmp-table--borderless{
     /* background-color: #F0F0F0; */
+    width: 100%;
     border-collapse: collapse;
     overflow: hidden;
 }

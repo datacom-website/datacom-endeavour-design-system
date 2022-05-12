@@ -1,10 +1,11 @@
 /* Table */
 
 .cmp-table--borderless{
-    /* width: 800px; */
+    width: 100%;
     /* background-color: #F0F0F0; */
     border-collapse: collapse;
     overflow: hidden;
+    
 }
 
 .cmp-table__td{
