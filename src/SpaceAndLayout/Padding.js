@@ -2,22 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-//  Padding layout components
-export const PaddingSquare = 
+export const PaddingExample = 
 styled.div`
-    width: ${props => props.pxValue}px;
-    height: ${props => props.pxValue}px;
+    width: ${props => props.width}px;
+    height: ${props => props.height}px;
     background-color: #E60060;
 `
-
-export const PadSquareContainer = 
-styled.div`
-    height: ${props => 
-        props.containerHeight < 64
-        ? '97px' : '113px'};
-    padding: 24px 0px 0px 24px;
-`
-//  Information
 export const paddingNames = [
     '$padding-01',
     '$padding-02',
@@ -41,3 +31,5 @@ export const paddingValues = {
     '$padding-08': ['3', '48'],
     '$padding-09': ['4', '64'],
 }
+
+

@@ -1,27 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Layout table components
-export const LayoutElement = 
+export const LayoutExample = 
 styled.div`
-    width: ${props => props.pxValues}px;
-    height: ${props => props.pxValues}px;
+    width: ${props => props.width}px;
+    height: ${props => props.height}px;
     background-color: #76C4FF;
 `
 
-export const LayoutElementContainer =
-styled.div`
-    height: ${props => 
-        props.containerHeight < 64 
-        ? '97px' : props.containerHeight == 64
-        ? '113px' : props.containerHeight == 80
-        ? '129px' : props.containerHeight == 120
-        ? '169px' : '200px'
-    };
-    padding: 24px 0px 0px 24px;
-`
-
-//  Information
 export const layoutNames = [
     '$layout-01',
     '$layout-02',

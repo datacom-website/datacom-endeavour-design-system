@@ -1,38 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types"
 
-function Button( { text, backgroundColor, padding } ){
-    // Style the components here
-    const style = {
-        backgroundColor,
-        padding,
-    }
-
-    //  One button
-    //  Wrap the button to separate each button
-    return(
-        <button style={style}>
-            { text }
-        </button>
-    )
+function Button({ label, backgroundColor = "red", size = "md", handleClick }) {
+  let scale = 1
+  if (size === "sm") scale = 0.75
+  if (size === "lg") scale = 1.5
+  const style = {
+    backgroundColor,
+    padding: `${scale * 0.5}rem ${scale * 1}rem`,
+    border: "none",
+  }
+  return (
+    <button onClick={handleClick} style={style}>
+      {label}
+    </button>
+  )
 }
 
-//  The attributes of the button 
-//  You can define the attributes in the stories
 Button.propTypes = {
-    text: PropTypes.string,
-    backgroundColor: PropTypes.string,
-    padding: PropTypes.number,
+  label: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  size: PropTypes.oneOf(["sm", "md", "lg"]),
+  handleClick: PropTypes.func,
 }
 
-export default Button;
-
-export const buttonColors = 
-[
-    'pink',
-    'green',
-    'orange',
-    'red',
-    'blue',
-    'white',
-];
+export default Button
