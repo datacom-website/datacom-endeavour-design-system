@@ -12,9 +12,4 @@ module.exports = {
     "@storybook/preset-create-react-app"
   ],
   "framework": "@storybook/react",
-  previewHead: (head) => (`
-    ${head}
-    <link href="../src/assets/font-awesome/css/all.css" rel="stylesheet">
-    
-  `),
 }
