@@ -25,7 +25,7 @@ export const Table = ({categories, data}) => {
                         return (
                             <tr>
                                 <td className='cmp-table__td'><mark className='cmp-table__td--gray-background'>{token}</mark></td>
-                                <td className='cmp-table__td'>{role}</td>
+                                <td className='cmp-table__td roleCol'>{role}</td>
                                 <td className='cmp-table__td colorExample-ctn'>
                                     <div style={{flexShrink: 4, lineHeight: '2em', float: 'left'}}>
                                         <div>{name}</div>

@@ -48,6 +48,10 @@
     /* display: flex; */
 }
 
+.cmp-table__td.roleCol{
+    width: 281px;
+}
+
 
 .cmp-table__colorExample{
     width: 48px;
