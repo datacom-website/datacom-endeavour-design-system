@@ -461,8 +461,6 @@ export const extendedShades = [
 export const ColorExample =
 styled.div`
     background-color: ${props => props.color};
-    // margin-left: auto;
-    float: right;
     opacity: ${props => props.opacity};
     border-radius: 8px;
     border: solid 1px #DADADA;
