@@ -56,14 +56,14 @@
     float: right;
 }
 
-@media (max-width: 800px){
+@media (max-width: 780px){
     .cmp-colour-table__colorExample{
         width: 24px;
         height: 24px
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 780px){
     .cmp-colour-table__colorExample{
         float: none;
     }
@@ -71,14 +71,14 @@
 
 .cmp-colour-table__td__colorExample-info{
     flex-shrink: 4;
-    /* line-height: 2em; */
     float: left;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 160px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 780px){
     .cmp-colour-table__td__colorExample-info{
         float: none;
     }
