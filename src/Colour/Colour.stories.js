@@ -4,7 +4,7 @@ import { colorTokens } from './Colour';
 import { extendedShades } from './Colour';
 
 export default{
-    title: 'Design System/Col...'
+    title: 'Design System/Colour'
 }
 
 const tableTemplate = args => <Table {...args}/>;
