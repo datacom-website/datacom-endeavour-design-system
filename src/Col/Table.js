@@ -8,11 +8,11 @@ import { ColorExample } from './Colour';
 export const Table = ({categories, data}) => {
     return(
         <div>
-            <table className='cmp-table--borderless'>
+            <table className='cmp-colour-table--borderless'>
                 <tr>
                     {categories.map((el => {
                         return (
-                            <th className='cmp-table__th'>{el}</th>
+                            <th className='cmp-colour-table__th'>{el}</th>
                         )
                     }))}
                 </tr>
@@ -24,16 +24,15 @@ export const Table = ({categories, data}) => {
 
                         return (
                             <tr>
-                                <td className='cmp-table__td'><mark className='cmp-table__td--gray-background'>{token}</mark></td>
-                                <td className='cmp-table__td roleCol'>{role}</td>
-                                <td className='cmp-table__td'>
-                                    {/* <div style={{flexShrink: 4, lineHeight: '2em', float: 'left'}}> */}
-                                    <div className='cmp-table__td__colorExample-info'>
+                                <td className='cmp-colour-table__td' style={{width: '241px'}}><mark className='cmp-colour-table__td--gray-background'>{token}</mark></td>
+                                <td className='cmp-colour-table__td roleCol'>{role}</td>
+                                <td className='cmp-colour-table__td'>
+                                    <div className='cmp-colour-table__td__colorExample-info'>
                                         <div>{name}</div>
                                         <div>{hex}</div>
                                         <div>R: {red} G: {green} B: {blue}</div>
                                     </div>
-                                    <ColorExample color={hex} opacity={opacity != undefined ? opacity+'%' : 1} className='cmp-table__colorExample'/>
+                                    <ColorExample color={hex} opacity={opacity != undefined ? opacity+'%' : 1} className='cmp-colour-table__colorExample'/>
                                 </td>
                             </tr>       
                         )

@@ -1,4 +1,4 @@
-/* Table */
+/* Space and Layout Table */
 
 .cmp-table--borderless{
     /* background-color: #F0F0F0; */
@@ -36,6 +36,7 @@
     background-color: #DADADA;
     border-radius: 4px;
     padding: 6px 8px;
+    font-size: 12px;
 }
 
 @media screen{

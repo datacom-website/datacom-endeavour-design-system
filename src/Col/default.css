@@ -1,82 +1,85 @@
-/* Table */
+/* Colour Tokens Table */
 
-.cmp-table--borderless{
+.cmp-colour-table--borderless{
     /* background-color: #F0F0F0; */
     width: 100%;
     border-collapse: collapse;
     overflow: hidden;
 }
 
-.cmp-table__th{
+.cmp-colour-table__th{
     text-align: left;
     padding: 24px 24px 24px 24px;
     border-top: 0;
 }
 
-.cmp-table__td{
+.cmp-colour-table__td{
     vertical-align: top;
     border: 1px solid #d9d9d9;
     padding: 24px 24px 24px 24px;
-    font-size: 16px;
 }
 
-.cmp-table--borderless tr:last-child td{
+.cmp-colour-table--borderless tr:last-child td{
     border-bottom: 0;
 }
 
-.cmp-table--borderless tr td:first-child{
+.cmp-colour-table--borderless tr td:first-child{
     border-left: 0;
 }
 
-.cmp-table--borderless tr td:last-child{
+.cmp-colour-table--borderless tr td:last-child{
     border-right: 0;
 }
 
-.cmp-table__td--gray-background{
+.cmp-colour-table__td--gray-background{
     background-color: #DADADA;
     border-radius: 4px;
     padding: 6px 8px;
+    font-size: 12px;
 }
 
 @media screen{
-    .cmp-table__td--gray-background{
+    .cmp-colour-table__td--gray-background{
         line-height: 1.5;
     }
 }
 
-.cmp-table__td.roleCol{
-    width: 281px;
+.cmp-colour-table__td.roleCol{
+    width: 271px;
     line-height: 1.5em;
 }
 
 
-.cmp-table__colorExample{
+.cmp-colour-table__colorExample{
     width: 48px;
     height: 48px;
     float: right;
 }
 
 @media (max-width: 800px){
-    .cmp-table__colorExample{
+    .cmp-colour-table__colorExample{
         width: 24px;
         height: 24px
     }
 }
 
 @media (max-width: 800px){
-    .cmp-table__colorExample{
+    .cmp-colour-table__colorExample{
         float: none;
     }
 }
 
-.cmp-table__td__colorExample-info{
+.cmp-colour-table__td__colorExample-info{
     flex-shrink: 4;
-    line-height: 2em;
+    /* line-height: 2em; */
     float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media (max-width: 800px){
-    .cmp-table__td__colorExample-info{
+    .cmp-colour-table__td__colorExample-info{
         float: none;
     }
 }
